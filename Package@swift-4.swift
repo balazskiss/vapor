@@ -36,7 +36,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/multipart.git", .upToNextMajor(from: "2.1.0")),
         
         // A type safe routing package including HTTP and TypeSafe routers.
-        .package(url: "https://github.com/vapor/routing.git", .upToNextMajor(from: "2.1.0")),
+        .package(url: "https://github.com/balazskiss/routing-kit.git", "2.2.1-swift5.2")
     ],
     targets: [
         .target(name: "Cache", dependencies: ["Node"]),
