@@ -43,7 +43,7 @@ let package = Package(
         .testTarget(name: "CacheTests", dependencies: ["Cache"]),
         .target(name: "Configs", dependencies: ["Core", "JSON"]),
         .testTarget(name: "ConfigsTests", dependencies: ["Configs"]),
-        .target(name: "Sessions", dependencies: ["Cache", "Cookies", "Crypto", "HTTP"]),
+        .target(name: "Sessions", dependencies: ["Cache", "Cookies", "OpenCrypto", "HTTP"]),
         .testTarget(name: "SessionsTests", dependencies: ["Sessions"]),
         .target(name: "Testing", dependencies: ["Core", "HTTP", "Vapor"]),
         .testTarget(name: "TestingTests", dependencies: ["Testing"]),

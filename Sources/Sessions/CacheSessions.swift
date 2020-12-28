@@ -1,4 +1,4 @@
-import Crypto
+import OpenCrypto
 import Cache
 import Node
 import Foundation
@@ -30,6 +30,6 @@ public final class CacheSessions: SessionsProtocol {
     }
 
     public func makeIdentifier() throws -> String {
-        return try Crypto.Random.bytes(count: 16).base64Encoded.makeString()
+        return try OpenCrypto.Random.bytes(count: 16).base64Encoded.makeString()
     }
 }

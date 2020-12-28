@@ -1,5 +1,5 @@
 import Core
-import Crypto
+import OpenCrypto
 import Node
 import Foundation
 
@@ -55,6 +55,6 @@ public final class MemorySessions: SessionsProtocol {
 
     /// Create new unique session id
     public func makeIdentifier() throws -> String {
-        return try Crypto.Random.bytes(count: 16).base64Encoded.makeString()
+        return try OpenCrypto.Random.bytes(count: 16).base64Encoded.makeString()
     }
 }

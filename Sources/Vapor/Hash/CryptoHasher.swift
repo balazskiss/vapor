@@ -1,4 +1,4 @@
-import Crypto
+import OpenCrypto
 
 /// Create normal and keyed hashes
 /// using the available HMAC methods from

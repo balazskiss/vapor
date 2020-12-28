@@ -2,7 +2,7 @@ import HTTP
 import Console
 import Cache
 import Sessions
-import Crypto
+import OpenCrypto
 import Transport
 import Sockets
 
